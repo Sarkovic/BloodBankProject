@@ -34,24 +34,25 @@
             </VBox>
          </children>
       </AnchorPane>
-      <Label layoutX="465.0" layoutY="37.0" text="User Profile">
+      <AnchorPane layoutX="230.0" prefHeight="500.0" prefWidth="570.0" />
+      <Label layoutX="465.0" layoutY="47.0" text="User Profile">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="309.0" layoutY="116.0" />
-      <TextField layoutX="309.0" layoutY="167.0" />
-      <TextField layoutX="309.0" layoutY="216.0" />
-      <TextField layoutX="309.0" layoutY="266.0" />
-      <TextField layoutX="309.0" layoutY="318.0" />
-      <Label layoutX="245.0" layoutY="120.0" text="First Name:" />
-      <Label layoutX="245.0" layoutY="171.0" text="Last Name:" />
-      <Label layoutX="245.0" layoutY="220.0" text="NID:" />
-      <Label layoutX="245.0" layoutY="270.0" text="Mobile:" />
-      <Label layoutX="245.0" layoutY="322.0" text="Email:" />
-      <Label layoutX="552.0" layoutY="120.0" text="Blood Group:" />
-      <ComboBox layoutX="634.0" layoutY="116.0" prefWidth="150.0" />
-      <TextField layoutX="308.0" layoutY="371.0" prefHeight="25.0" prefWidth="479.0" />
-      <Label layoutX="245.0" layoutY="375.0" text="Address:" />
+      <TextField layoutX="309.0" layoutY="126.0" />
+      <TextField layoutX="309.0" layoutY="177.0" />
+      <TextField layoutX="309.0" layoutY="226.0" />
+      <TextField layoutX="309.0" layoutY="276.0" />
+      <TextField layoutX="309.0" layoutY="328.0" />
+      <Label layoutX="245.0" layoutY="130.0" text="First Name:" />
+      <Label layoutX="245.0" layoutY="181.0" text="Last Name:" />
+      <Label layoutX="245.0" layoutY="230.0" text="NID:" />
+      <Label layoutX="245.0" layoutY="280.0" text="Mobile:" />
+      <Label layoutX="245.0" layoutY="332.0" text="Email:" />
+      <Label layoutX="552.0" layoutY="130.0" text="Blood Group:" />
+      <ComboBox layoutX="634.0" layoutY="126.0" prefWidth="150.0" />
+      <TextField layoutX="308.0" layoutY="381.0" prefHeight="25.0" prefWidth="479.0" />
+      <Label layoutX="245.0" layoutY="385.0" text="Address:" />
    </children>
 </AnchorPane>

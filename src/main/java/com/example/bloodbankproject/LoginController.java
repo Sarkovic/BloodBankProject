@@ -18,7 +18,7 @@ public class LoginController {
     @FXML
     private Label loginTitle;
     @FXML
-    private Stage loginStage;
+    private Stage loginStage, registerStage;
 
     @FXML
     private Parent root;
@@ -36,8 +36,16 @@ public class LoginController {
         }
     }
     @FXML
-    protected void onRegisterButtonClick(){
-        loginTitle.setText("Registered");
+    protected void onRegisterButtonClick(ActionEvent event){
+        try{
+            root = FXMLLoader.load(getClass().getResource("register-view.fxml"));
+            registerStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            registerStage.setTitle("Blood Bank");
+            registerStage.setScene(new Scene(root));
+            registerStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
