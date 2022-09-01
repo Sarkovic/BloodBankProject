@@ -1,8 +1,14 @@
 package com.example.bloodbankproject;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 public class LoginController {
     @FXML
@@ -11,10 +17,23 @@ public class LoginController {
     private Button registerButton;
     @FXML
     private Label loginTitle;
+    @FXML
+    private Stage loginStage;
 
     @FXML
-    protected void onLoginButtonClick(){
-        loginTitle.setText("Logged in");
+    private Parent root;
+
+    @FXML
+    protected void onLoginButtonClick(ActionEvent event){
+        try{
+            root = FXMLLoader.load(getClass().getResource("mainmenu-view.fxml"));
+            loginStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            loginStage.setTitle("Blood Bank");
+            loginStage.setScene(new Scene(root));
+            loginStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     @FXML
     protected void onRegisterButtonClick(){

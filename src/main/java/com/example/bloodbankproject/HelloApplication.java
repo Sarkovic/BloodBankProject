@@ -11,7 +11,7 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("main-view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login-view.fxml"));
         primaryStage.setTitle("Blood Bank");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
