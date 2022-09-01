@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bloodbankproject.MainmenuView">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="230.0" style="-fx-background-color: #9F1111;" />
+   </children>
+</AnchorPane>
