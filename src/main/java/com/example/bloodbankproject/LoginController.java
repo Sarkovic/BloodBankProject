@@ -26,7 +26,7 @@ public class LoginController {
     @FXML
     protected void onLoginButtonClick(ActionEvent event){
         try{
-            root = FXMLLoader.load(getClass().getResource("mainmenu-view.fxml"));
+            root = FXMLLoader.load(getClass().getResource("editprofile-view.fxml"));
             loginStage = (Stage)((Node)event.getSource()).getScene().getWindow();
             loginStage.setTitle("Blood Bank");
             loginStage.setScene(new Scene(root));
