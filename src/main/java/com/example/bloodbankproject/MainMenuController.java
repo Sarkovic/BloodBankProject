@@ -19,6 +19,7 @@ public class MainMenuController {
     @FXML
     private Button editProfileButton;
     public Button userProfileButton;
+    public Button logOutButton;
     @FXML
     private TextField firstName;
     @FXML
@@ -61,4 +62,16 @@ public class MainMenuController {
         }
     }
 
+    @FXML
+    public void onClickLogOutButton(ActionEvent event){
+        try {
+            root = FXMLLoader.load(getClass().getResource("login-view.fxml"));
+            mainMenuStage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            mainMenuStage.setTitle("BloodBank");
+            mainMenuStage.setScene(new Scene(root));
+            mainMenuStage.show();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }

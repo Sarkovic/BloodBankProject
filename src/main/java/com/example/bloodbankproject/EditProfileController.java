@@ -25,4 +25,9 @@ public class EditProfileController extends MainMenuController implements Initial
     public void onClickUserProfileButton(ActionEvent event) {
         super.onClickUserProfileButton(event);
     }
+
+    @Override
+    public void onClickLogOutButton(ActionEvent event) {
+        super.onClickLogOutButton(event);
+    }
 }
