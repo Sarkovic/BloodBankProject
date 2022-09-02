@@ -1,5 +1,6 @@
 package com.example.bloodbankproject;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
@@ -7,7 +8,7 @@ import javafx.scene.control.ComboBox;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class EditProfileController implements Initializable {
+public class EditProfileController extends MainMenuController implements Initializable {
     @FXML
     private ComboBox<String> bloodGroup = new ComboBox<>();
     @FXML
@@ -18,5 +19,10 @@ public class EditProfileController implements Initializable {
     public void initialize(URL arg0, ResourceBundle arg1) {
         bloodGroup.getItems().addAll(bloodGroupsList);
         gender.getItems().addAll(genderList);
+    }
+
+    @Override
+    public void onClickUserProfileButton(ActionEvent event) {
+        super.onClickUserProfileButton(event);
     }
 }
