@@ -7,14 +7,16 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class RegisterMenuController implements Initializable {
-
+public class RegisterMenuOneController implements Initializable {
     @FXML
     private TextField firstName;
     @FXML
@@ -28,17 +30,9 @@ public class RegisterMenuController implements Initializable {
     @FXML
     private DatePicker dateOfBirth;
     @FXML
-    private TextField email;
+    private TextField weight;
     @FXML
-    private TextField mobileNum;
-    @FXML
-    private TextField nidNum;
-    @FXML
-    private PasswordField password;
-    @FXML
-    private TextField address;
-    @FXML
-    private Button registerButton;
+    private Button nextButton;
     @FXML
     private Parent root;
     @FXML
@@ -51,9 +45,9 @@ public class RegisterMenuController implements Initializable {
     }
 
     @FXML
-    protected void onClickRegisterButton(ActionEvent event){
+    protected void onClickNextButton(ActionEvent event){
         try {
-            root = FXMLLoader.load(getClass().getResource("login-view.fxml"));
+            root = FXMLLoader.load(getClass().getResource("registerview-two.fxml"));
             registerStage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             registerStage.setScene(new Scene(root));
             registerStage.show();
