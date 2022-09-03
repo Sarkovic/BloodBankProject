@@ -8,9 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bloodbankproject.RegisterMenuTwoController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bloodbankproject.RegisterMenuTwoController">
    <children>
       <TextField fx:id="email" layoutX="156.0" layoutY="142.0" prefHeight="39.0" prefWidth="200.0" promptText="Your primary email" />
       <TextField fx:id="mobileNum" layoutX="156.0" layoutY="223.0" prefHeight="39.0" prefWidth="200.0" promptText="Your primary contact number" />
@@ -43,7 +41,6 @@
       </Label>
       <ComboBox fx:id="division" layoutX="44.0" layoutY="354.0" prefWidth="150.0" promptText="Dvision" />
       <ComboBox fx:id="district" layoutX="241.0" layoutY="354.0" prefWidth="150.0" promptText="District" />
-      <ComboBox fx:id="thana" layoutX="441.0" layoutY="354.0" prefWidth="150.0" promptText="Thana" />
       <Label layoutX="331.0" layoutY="54.0" text="Registration">
          <font>
             <Font name="System Bold" size="24.0" />
@@ -54,5 +51,6 @@
             <Font size="16.0" />
          </font>
       </Button>
+      <TextField fx:id="thana" layoutX="437.0" layoutY="354.0" promptText="Enter thana" />
    </children>
 </AnchorPane>

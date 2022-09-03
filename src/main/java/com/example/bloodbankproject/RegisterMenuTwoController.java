@@ -17,6 +17,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class RegisterMenuTwoController implements Initializable {
+    public TextField thana;
     @FXML
     private TextField email;
     @FXML
